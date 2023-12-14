@@ -1,4 +1,4 @@
-# Title (the project goal)
+# Robotics (Lego robotics code)
 
-## Description
-The robot will do ... and then ...
+## We do da robotics
+The robot will do stuff and then more stuff
