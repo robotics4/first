@@ -1,4 +1,4 @@
 # Robotics (Lego robotics code)
 
-## We do da robotics
-The robot will do stuff and then more stuff
+## We do robotics
+We will make a robot become Micheal Jordan and make it do a three pointer with a plastic energy piece.
