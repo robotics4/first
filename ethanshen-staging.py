@@ -21,7 +21,7 @@ motor.run_for_degrees(port.F, -180, 200)
 #moves the motors backwards towards the toy factory
 time.sleep(1.5)
 #waits the amount of time it takes to move backwards
-motor.run_for_degrees(port.E, 180, 250)
+motor.run_for_degrees(port.E, 180, 300)
 #throws the energy
 time.sleep(0.7)
 #waits the amount of time it takes to throw the energy
