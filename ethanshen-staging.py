@@ -3,7 +3,7 @@ import time
 #imports stuff
 from hub import port
 #imports the ports
-motor.run_to_absolute_position(port.E, 14, 360)
+motor.run_to_absolute_position(port.E, 10, 360)
 #gets the thrower ready
 time.sleep(0.05)
 #waits for the amount of time it takes to load the thrower.
