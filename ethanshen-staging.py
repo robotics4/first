@@ -25,5 +25,5 @@ motor.run_for_degrees(port.E, 180, 300)
 #throws the energy
 time.sleep(0.7)
 #waits the amount of time it takes to throw the energy
-motor.run_for_degrees(port.E, -220, 360)
+motor.run_for_degrees(port.E, -220, 300)
 #brings motor E back to the ground
