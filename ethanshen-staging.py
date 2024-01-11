@@ -12,7 +12,7 @@ motor.run_for_degrees(port.F, 450, 200)
 #move forward to grab the energy
 time.sleep(1)
 #waits the amount of time it takes to get to the energy
-motor.run_for_degrees(port.E, 40, 50)
+motor.run_for_degrees(port.E, 30, 50)
 #raises the thrower a little bit higher so that gravity will pull it down and then the energy won't fall down
 time.sleep(0.9)
 #waits the amount of time it takes to move the thrower a bit higher
