@@ -6,11 +6,8 @@ import time
 import hub
 import distance_sensor
 
-if distance_sensor.distance(9):
+if distance_sensor.distance(20):
     ##insert movement to mission here
-    #move backwards/approach mission
-    motor.run_for_degrees(port.D,360,200)
-    motor.run_for_degrees(port.F,-360,200)
     #turn (wait wat)
     #DUNK
     motor.run_to_absolute_position(port.E,180,100)
