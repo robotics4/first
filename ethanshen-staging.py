@@ -10,15 +10,19 @@ while not color_sensor.color(port.A) is color.RED:
         motor.run_for_degrees(port.D, -3, 100)
     else:
         motor.run_for_degrees(port.F, 3, 100)
-time.sleep(4)
-motor.run_for_degrees(port.D, -380, 200)
+time.sleep(3)
+motor.run_for_degrees(port.D, -300, 200)
 time.sleep(2.2)
 while not color_sensor.color(port.A) is color.BLUE:
     if color_sensor.reflection(port.A) > 70:
         motor.run_for_degrees(port.D, -3, 100)
     else:
         motor.run_for_degrees(port.F, 3, 100)
-time.sleep(4)
+time.sleep(2.5)
+#line follower
+while not color_sensor.color(port.A)
+motor.run_for_degrees(port.D, -10, 200)
+motor.run_for_degrees(port.E, 10, 200)
 motor.run_to_absolute_position(port.E, 10, 180)
 #gets the thrower ready
 time.sleep(0.05)
@@ -26,7 +30,7 @@ time.sleep(0.05)
 motor.run_for_degrees(port.D, -250, 200)
 motor.run_for_degrees(port.F, 250, 200)
 #move forward to grab the energy
-time.sleep(1)
+time.sleep(2.5)
 #waits the amount of time it takes to get to the energy
 motor.run_for_degrees(port.E, 30, 50)
 #raises the thrower a little bit higher so that gravity will pull it down and then the energy won't fall down
@@ -41,5 +45,5 @@ motor.run_for_degrees(port.E, 220, 250)
 #throws the energy
 time.sleep(0.7)
 #waits the amount of time it takes to throw the energy
-motor.run_for_degrees(port.E, -200, 300)
+motor.run_for_degrees(port.E, -180, 300)
 #brings motor E back to the ground
