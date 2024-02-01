@@ -1,6 +1,8 @@
 import motor
 import time
+import distance_sensor
 from hub import port
+
 
 motor.run_to_absolute_position(port.E, 8, 150)
 # makes the motor hand go to perfect position
