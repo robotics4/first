@@ -1,6 +1,7 @@
 import motor
 import time
-import distance_sensor
+import color
+import color_sensor
 from hub import port
 
 while not color_sensor.color(port.A) is color.RED:
