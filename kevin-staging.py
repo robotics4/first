@@ -16,18 +16,13 @@ while not color_sensor.color(port.A) is color.BLUE:
     if color_sensor.reflection(port.A) > 70:
         motor.run_for_degrees(port.D, -3, 100)
     else:
-        motor.run_for_degrees(port.F, 3, 100)
-time.sleep(2.5)
-motor.run_to_absolute_position(port.E, 10, 150)
-# makes the motor hand go to perfect position
-motor.run_for_degrees(port.D, -400, 100)
-motor.run_for_degrees(port.F, 400, 100)
-# makes robot move foward
-time.sleep(1.5)
-motor.run_for_degrees(port.E, 40, 50)
-time.sleep(1.5)
-motor.run_for_degrees(port.D, 400, 100)
-motor.run_for_degrees(port.F, -400, 100)
-time.sleep(1.5)
-motor.run_for_degrees(port.E, -220, 200)
-time.sleep(1.5)
+motor.run_to_absolute_position(port.E,40,200)
+time.sleep(0.3)
+motor.run_to_absolute_position(port.E,10,60)
+time.sleep(0.9)
+motor.run_for_degrees(port.D,-400,200)
+motor.run_for_degrees(port.F,400,200)
+time.sleep(0.9)
+motor.run_to_absolute_position(port.E,30,200)
+time.sleep(0.6)
+motor.run_to_absolute_position(port.E,180,80)
