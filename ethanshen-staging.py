@@ -10,7 +10,6 @@ while not color_sensor.color(port.A) is color.RED:
         motor.run_for_degrees(port.D, -3, 100)
     else:
         motor.run_for_degrees(port.F, 3, 100)
-time.sleep(3)
 motor.run_for_degrees(port.D, -300, 200)
 time.sleep(2.2)
 while not color_sensor.color(port.A) is color.BLUE:
@@ -18,9 +17,7 @@ while not color_sensor.color(port.A) is color.BLUE:
         motor.run_for_degrees(port.D, -3, 100)
     else:
         motor.run_for_degrees(port.F, 3, 100)
-time.sleep(2.5)
 #line follower
-while not color_sensor.color(port.A)
 motor.run_for_degrees(port.D, -10, 200)
 motor.run_for_degrees(port.E, 10, 200)
 motor.run_to_absolute_position(port.E, 10, 180)
