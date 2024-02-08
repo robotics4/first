@@ -31,7 +31,7 @@ time.sleep(4)
 while distance_sensor.distance(port. C)>50:
     motor.run_for_degrees(port.D, 1, 200)
 motor.run_for_degrees(port.D, -600, 200)
-motor.run_to_absolute_position(port.E, 8, 120)
+motor.run_to_absolute_position(port.E, 10, 120)
 time.sleep(5)
 motor.run_for_degrees(port.D, -200, 200)
 motor.run_for_degrees(port.F, 200, 200)
