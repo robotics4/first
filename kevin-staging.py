@@ -10,7 +10,7 @@ while not color_sensor.color(port.A) is color.RED:
     else:
         motor.run_for_degrees(port.F, 3, 100)
 time.sleep(3.4)
-motor.run_for_degrees(port.D, -380, 200)
+motor.run_for_degrees(port.D, -300, 200)
 time.sleep(2.2)
 while not color_sensor.color(port.A) is color.BLUE:
     if color_sensor.reflection(port.A) > 70:
