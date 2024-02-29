@@ -18,7 +18,7 @@ while not color_sensor.color(port.A) is color.BLUE:
     else:
         motor.run_for_degrees(port.F, 3, 100)
 #line follower
-motor.run_to_absolute_position(port.E, 13, 180)
+motor.run_to_absolute_position(port.E, 10, 180)
 #gets the thrower ready
 time.sleep(0.05)
 #waits for the amount of time it takes to load the thrower.
