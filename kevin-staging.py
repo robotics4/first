@@ -18,7 +18,7 @@ while not color_sensor.color(port.A) is color.BLUE:
         motor.run_for_degrees(port.D, -3, 100)
     else:
         motor.run_for_degrees(port.F, 3, 100)
-        motor.run_to_absolute_position(port.E,40,200)
+        motor.run_to_absolute_position(port.E,10,60)
         # makes the hub turn on blue and follow the road
 time.sleep(0.3)
 motor.run_to_absolute_position(port.E,10,60)
@@ -26,13 +26,17 @@ motor.run_to_absolute_position(port.E,10,60)
 time.sleep(0.9)
 motor.run_for_degrees(port.D,-400,200)
 motor.run_for_degrees(port.F,400,200)
-# moves foward
+# moves foward to get energy
+motor.run_to_absolute_position(port.E,30,50)
+# makes the hand use gravity to hold energy
 time.sleep(0.9)
-motor.run_for_degrees(port.D,-150,200)
+motor.run_for_degrees(port.D,-50,200)
 time.sleep(0.5)
-motor.run_to_absolute_position(port.E,30,200)
+#turns
+motor.run_to_absolute_position(port.F,30,200)
 time.sleep(0.6)
 motor.run_for_degrees(port.D,-200,200)
 motor.run_for_degrees(port.F,200,200)
+# move foward
 time.sleep(0.9)
 motor.run_to_absolute_position(port.E,180,80)
