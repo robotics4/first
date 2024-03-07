@@ -6,6 +6,7 @@ import color
 #imports stuff
 from hub import port
 #imports the ports
+motor.run_to_absolute_position(port.E, 10, 180)
 while not color_sensor.color(port.A) is color.RED:
     if color_sensor.reflection(port.A) > 70:
         motor.run_for_degrees(port.D, -2, 100)
@@ -36,9 +37,9 @@ motor.run_for_degrees(port.D, 150, 180)
 time.sleep(1.3)
 #turns
 #Kool Distance sensor stuff.
-while not distance_sensor.distance(port.C)<= 15:
-    motor.run_for_degrees(port.D, 120, 200)
-    motor.run_for_degrees(port.F, -120, 200)
+while not distance_sensor.distance(port.C)<= 10:
+    motor.run_for_degrees(port.D, 10, 200)
+    motor.run_for_degrees(port.F, -10, 200)
 #moves forward
 time.sleep(1)
 #waits the amount of time it takes to move backwards
