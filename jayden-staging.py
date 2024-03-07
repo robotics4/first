@@ -23,11 +23,11 @@ while not color_sensor.color(port.A) is color.BLUE:
         motor.run_for_degrees(port.D, -1, 200)
     else:
         motor.run_for_degrees(port.F, 1, 200)
-motor.run_for_degrees(port.F, -600, 200)
-time.sleep(2)
 motor.run_for_degrees(port.E, 20, 200)
+time.sleep(2)
+motor.run_for_degrees(port.F, 600, 200)
 time.sleep(0.4)
-for i in range(0, 50):
+while not distance_sensor.distance(port.C) < 50:
     motor.run_for_degrees(port.D, -3, 200)
     time.sleep(0.01)
 #put it next to the blue marker so it is easily more accurate and could pick the energy up
