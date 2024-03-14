@@ -9,14 +9,14 @@ import color
 #imports stuff
 from hub import port
 #imports the ports
-motor.run_to_absolute_position(port.E,13, 60)
+motor.run_to_absolute_position(port.E, 9, 60)
 while not color_sensor.color(port.A) is color.RED:
     if color_sensor.reflection(port.A) > 70:
         motor.run_for_degrees(port.D, -1, 100)
-    else:
+    else: 
         motor.run_for_degrees(port.F, 1, 100)
 time.sleep(0.3)
-motor.run_for_degrees(port.D, -300, 200)
+motor.run_for_degrees(port.D, -290, 200)
 time.sleep(2.2)
 while not color_sensor.color(port.A) is color.BLUE:
     if color_sensor.reflection(port.A) > 70:
@@ -24,8 +24,11 @@ while not color_sensor.color(port.A) is color.BLUE:
     else:
         motor.run_for_degrees(port.F, 1, 200)
 motor.run_for_degrees(port.E, 20, 200)
-time.sleep(2)
-while not distance_sensor.distance(port.C) < 50:
+time.sleep(3)
+motor.run_for_degrees(port.D, -100, 200)
+motor.run_for_degrees(port.F, 100, 200)
+time.sleep(3)
+while not distance_sensor.distance(port.C) > 50:
     motor.run_for_degrees(port.F, 3, 200)
     time.sleep(0.01)
 #put it next to the blue marker so it is easily more accurate and could pick the energy up
