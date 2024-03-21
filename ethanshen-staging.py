@@ -29,9 +29,9 @@ motor.run_for_degrees(port.F, 700, 500)
 #move forward to grab the energy
 time.sleep(2.3)
 #waits the amount of time it takes to get to the energy
-motor.run_to_absolute_position(port.E, 40, 50)
-motor.run_to_absolute_position(port.E, 40, 50)
-motor.run_to_absolute_position(port.E, 40, 50)
+for i in range (0,10):
+    motor.run_to_absolute_position(port.E, 40, 50)
+
 #raises the thrower a little bit higher so that gravity will pull it down and then the energy won't fall down
 time.sleep(1.5)
 #waits the amount of time it takes to move the thrower a bit higher
